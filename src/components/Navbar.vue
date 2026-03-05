@@ -4,6 +4,8 @@
 
     <div class="links">
       <router-link to="/">Home</router-link>
+      <router-link to="/feed">Feed</router-link>
+      <router-link to="/login">Login</router-link>
     </div>
   </nav>
 </template>
@@ -21,13 +23,12 @@
 
 .logo {
   color: #1e90ff;
-  font-weight: bold;
 }
 
 .links a {
   color: white;
-  text-decoration: none;
   margin-left: 20px;
+  text-decoration: none;
 }
 
 .links a.router-link-active {
