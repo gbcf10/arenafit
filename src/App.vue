@@ -2,7 +2,14 @@
 
   <nav class="navbar">
 
-    <h2>ArenaFit</h2>
+    <div class="brand">
+      <h2>ArenaFit</h2>
+
+      <img 
+        src="/src/assets/logo.JPG"
+        class="logo"
+      />
+    </div>
 
     <div class="links">
       <router-link to="/">Home</router-link>
@@ -25,14 +32,30 @@ body{
   font-family:Arial;
 }
 
+/* NAVBAR */
+
 .navbar{
   display:flex;
   justify-content:space-between;
-  align-items:center;
+  align-items:flex-start;
   padding:15px 40px;
   background:#111;
   border-bottom:1px solid #222;
 }
+
+/* ARENAFIT + LOGO */
+
+.brand{
+  display:flex;
+  flex-direction:column;
+}
+
+.logo{
+  width:80px;
+  margin-top:-20px;
+}
+
+/* LINKS */
 
 .links a{
   color:white;
